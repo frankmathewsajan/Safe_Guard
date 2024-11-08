@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SafeGuard</title>
+    <link rel="stylesheet" href="{% static 'guard/css/styles.css' %}">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="{% static 'guard/img/logo.png' %}" alt="SafeGuard Logo">
+                <span class="logo-text">SafeGuard</span>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'features' %}">Features</a>
+                <a href="{% url 'login' %}">Sign In</a>
+                <a href="{% url 'register' %}">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Welcome to SafeGuard</h1>
+            <p class="lead mb-4">Your ultimate companion for safety, health, and connectivity.</p>
+            <a href="{% url 'register' %}" class="btn btn-lg btn-warning mt-4">Join Us Today</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <h2>About SafeGuard</h2>
+                <p>SafeGuard is an innovative smart watch designed to keep you safe and connected. With advanced features such as real-time location tracking, emergency alerts, and health monitoring, our device ensures you are never alone in times of need.</p>
+                <p>Whether you're hiking in the mountains, commuting to work, or just going about your daily life, SafeGuard provides peace of mind with its cutting-edge technology.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 SafeGuard Technologies. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

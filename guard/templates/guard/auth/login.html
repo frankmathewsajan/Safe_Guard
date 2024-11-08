@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - The WRIST Band</title>
+    <style>
+        /* Previous CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .signin-form {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2980b9;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #2980b9;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #1a6a8e;
+        }
+    </style>
+</head>
+<body>
+    <form class="signin-form" action="{% url 'dashboard' %}">
+        <div class="form-group">
+            <label for="signInUserId">User ID:</label>
+            <input type="text" id="signInUserId" name="signInUserId" required>
+        </div>
+
+        <div class="form-group">
+            <label for="signInPassword">Password:</label>
+            <input type="password" id="signInPassword" name="signInPassword" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Sign In</button>
+        </div>
+    </form>
+</body>
+</html>

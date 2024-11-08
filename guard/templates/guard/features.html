@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 .0">
+    <title>Features - SafeGuard</title>
+    <link rel="stylesheet" href="{% static 'guard/css/styles.css' %}">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="{% static 'guard/img/logo.png' %}" alt="SafeGuard Logo">
+                <span class="logo-text">SafeGuard</span>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'features' %}">Features</a>
+                <a href="{% url 'login' %}">Sign In</a>
+                <a href="{% url 'register' %}">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="features-section">
+            <div class="container">
+                <h2>Key Features of SafeGuard</h2>
+                <ul>
+                    <li><strong>Real-Time GPS Tracking:</strong> Always know your location and share it with trusted contacts.</li>
+                    <li><strong>Emergency SOS Button:</strong> Instantly alert your emergency contacts with a single press.</li>
+                    <li><strong>Health Monitoring:</strong> Track your heart rate, steps, and other vital signs to stay healthy.</li>
+                    <li><strong>Water-Resistant Design:</strong> Durable and ready for any adventure, rain or shine.</li>
+                    <li><strong>Long Battery Life:</strong> Enjoy extended use without frequent recharging.</li>
+                    <li><strong>Customizable Alerts:</strong> Set reminders and notifications for important events and activities.</li>
+                </ul>
+                <p>SafeGuard is designed to empower you with the tools you need to stay safe and healthy. Whether you're an outdoor enthusiast, a busy professional, or someone who values peace of mind, our smart watch is the perfect companion.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 SafeGuard Technologies. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
